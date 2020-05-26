@@ -8,13 +8,10 @@
     "48": "assets/icons/icon48.png",
     "128": "assets/icons/icon128.png"
   },
-  "page_action": {
-    "default_icon": {
-      "16": "assets/icons/icon16.png",
-      "24": "assets/icons/icon24.png",
-      "32": "assets/icons/icon32.png"
-    },
-    "default_title": "Chrome Extension Starter"
+  "browser_action": {
+    "default_icon": "assets/icons/icon16.png",
+    "default_popup": "popup/index.html",
+    "default_title": "Starter Popup"
   },
   "content_scripts": [
     {

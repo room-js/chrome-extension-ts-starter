@@ -2,10 +2,12 @@
   "parser": "@typescript-eslint/parser",
   "extends": [
     "eslint:recommended",
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "react"
   ],
   "env": {
     "browser": true,
@@ -18,6 +20,11 @@
     "sourceType": "module",
     "ecmaFeatures": {
       "modules": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
     }
   },
   "overrides": [
