@@ -1,7 +1,7 @@
 {
   "name": "chrome-extension-ts-starter",
   "version": "1.0.0",
-  "description": "A starter for a Chrome Extension built with TypeScript",
+  "description": "Chrome Extension starter built with TypeScript and Parcel",
   "main": "index.js",
   "scripts": {
     "build:bg": "parcel build src/background/index.ts -d dist/background",

@@ -1,6 +1,6 @@
 # chrome-extension-ts-starter
 
-It is a boilerplate for a Chrome Extension built with TypeScript
+It is a boilerplate for a Chrome Extension built with TypeScript and Parcel.
 
 ## This starter consists of the following parts
 
