@@ -1,1 +1,1 @@
-Object.assign(global, require('@bumble/jest-chrome'));
+Object.assign(global, require('jest-chrome'));
