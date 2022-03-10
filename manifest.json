@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Chrome Extension Starter",
   "version": "1.0.0",
   "description": "",
@@ -8,8 +8,12 @@
     "48": "assets/icons/icon48.png",
     "128": "assets/icons/icon128.png"
   },
-  "browser_action": {
-    "default_icon": "assets/icons/icon16.png",
+  "action": {
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "24": "assets/icons/icon24.png",
+      "32": "assets/icons/icon32.png"
+    },
     "default_popup": "popup/index.html",
     "default_title": "Starter Popup"
   },
@@ -22,17 +26,21 @@
     }
   ],
   "background": {
-    "scripts": [
-      "background/index.js"
-    ],
-    "persistent": false
+    "service_worker": "background/index.js"
   },
   "devtools_page": "devtools/index.html",
   "options_page": "options/index.html",
-  "web_accessible_resources": [
-    "assets/icons/*.png"
-  ],
+  "web_accessible_resources": [{
+    "resources": [
+      "assets/icons/*.png"
+    ],
+    "matches": [],
+    "extension_ids": []
+  }],
   "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
     "*://*/*"
   ]
 }
