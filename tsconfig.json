@@ -20,13 +20,15 @@
     "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {},
+    "types": ["node", "jest", "chrome"],
     "typeRoots": [
       "node_modules/@types"
     ],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true
   },
   "include": [
     "./src"

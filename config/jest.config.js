@@ -1,17 +1,12 @@
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'jsdom',
-  moduleFileExtensions: ['ts', 'js'],
+  preset: 'ts-jest/presets/js-with-ts',
+  testEnvironment: '../config/fixJSDomEnv.ts',
   rootDir: '../src',
-  testMatch: [ '**/__tests__/**/*.test.ts' ],
+  testMatch: [ '**/*.test.ts' ],
   testPathIgnorePatterns: ['node_modules', '.cache', 'dist'],
-  transformIgnorePatterns: ['node_modules/'],
+  transformIgnorePatterns: ['<rootDir>/node_modules/'],
   transform: {
-    '^.+\\.ts?$': 'babel-jest',
-  },
-  setupFilesAfterEnv: ['../config/jest.setup.js'],
-  globals: {
-    chrome: true,
+    '^.+\\.ts?$': 'ts-jest',
   },
   collectCoverage: true,
   coverageThreshold: {
