@@ -28,10 +28,14 @@
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
-    "allowJs": true
+    "allowJs": true,
+    "skipLibCheck": true
   },
   "include": [
     "./src"
+  ],
+  "exclude": [
+    "node_modules"
   ],
   "files": [
     "./vue-shims.d.ts"
