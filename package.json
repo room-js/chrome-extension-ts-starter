@@ -31,7 +31,7 @@
   "author": "Yuri Drabik <yurist38@mail.ru>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.24.7",
+    "@babel/core": "^7.29.6",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
     "@parcel/transformer-typescript-tsc": "^2.12.0",
